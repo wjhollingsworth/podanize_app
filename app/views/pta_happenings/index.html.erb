@@ -1,0 +1,29 @@
+<h1>Listing pta_happenings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Content</th>
+      <th>Newsletter</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pta_happenings.each do |pta_happening| %>
+      <tr>
+        <td><%= pta_happening.name %></td>
+        <td><%= pta_happening.content %></td>
+        <td><%= pta_happening.newsletter_id %></td>
+        <td><%= link_to 'Show', pta_happening %></td>
+        <td><%= link_to 'Edit', edit_pta_happening_path(pta_happening) %></td>
+        <td><%= link_to 'Destroy', pta_happening, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pta happening', new_pta_happening_path %>

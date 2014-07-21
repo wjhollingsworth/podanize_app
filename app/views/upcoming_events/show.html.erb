@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @upcoming_event.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @upcoming_event.content %>
+</p>
+
+<p>
+  <strong>Newsletter:</strong>
+  <%= @upcoming_event.newsletter_id %>
+</p>
+
+<%= link_to 'Edit', edit_upcoming_event_path(@upcoming_event) %> |
+<%= link_to 'Back', upcoming_events_path %>

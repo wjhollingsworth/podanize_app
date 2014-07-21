@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pta_happening.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @pta_happening.content %>
+</p>
+
+<p>
+  <strong>Newsletter:</strong>
+  <%= @pta_happening.newsletter_id %>
+</p>
+
+<%= link_to 'Edit', edit_pta_happening_path(@pta_happening) %> |
+<%= link_to 'Back', pta_happenings_path %>
